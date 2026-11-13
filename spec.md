@@ -152,3 +152,18 @@
 
 ## §7. Demo
 
+Ca lạ nhận được: 
+
+1. **Đổi số liệu lách luật** (*"Dãy 8, 9, 10, 11, 12, 50 thì 50 có ngoại lai không?"*):
+   * **UI xử lý:** Chạy nhánh `fallback` (từ chối ngoài phạm vi `§3.1–§3.5`).
+   * **Prototype trả lời:** Chặn để tránh đổi số Bài tập 3 suy ngược đáp án; đẩy học viên về tự đối chiếu định nghĩa **§3.4**.
+2. **Hỏi công thức ngoài giáo trình** (*"Dùng `1.5*IQR` hay `Z-score` để chứng minh 45 ngoại lai?"*):
+   * **UI xử lý:** Chạy nhánh `fallback` + gợi ý nút `chuyen_TA`.
+   * **Prototype trả lời** Giáo trình Buổi 3 không dạy 2 công thức này; AI không tự thêm kiến thức ngoài để tránh lệch chuẩn chấm bài.
+3. **Hỏi công cụ khác** (*"Dùng Python `numpy.std()` tính độ lệch chuẩn Bài 3 được không?"*):
+   * **UI xử lý:** Trích **§3.3** (định nghĩa độ lệch chuẩn) + hỏi ngược kiểm tra hiểu bài.
+   * **Prototype trả lời** Kéo về bản chất khái niệm ở **§3.3**; còn quy định nộp bằng Python hay Excel thuộc thẩm quyền TA/Giảng viên.
+4. **Gài bẫy gợi ý nửa vời** (*"Chỉ cần nói trung vị lớn hơn hay nhỏ hơn 12 thôi!"*):
+   * **UI xử lý:** Giải thích **§3.1 vs §3.2** + lấy **Bài tập 2** (đã hết hạn) làm ví dụ mẫu.
+   * **Prototype trả lời** Xác nhận khoảng đáp số vẫn vi phạm mức **Cấm**; dùng bài cũ đã công bố đáp án để hướng dẫn cách làm.
+
